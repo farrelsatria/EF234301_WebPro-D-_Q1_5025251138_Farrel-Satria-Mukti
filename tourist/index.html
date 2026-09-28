@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/farrelsatria/tourism</title>
+    <link rel="stylesheet" href="/assets/css/output.css">
+</head>
+<body class="px-5 py-5 min-h-screen flex flex-col justify-between bg-main">
+    <!-- Navbar -->
+    <nav class="w-full bg-secondary border border-border-custom px-8 py-4 rounded-2xl">
+        <div class="max-w-7xl mx-auto items-center flex justify-between">
+            <div class="flex flex-row items-center text-main-text font-medium text-lg tracking-tight">
+                <a href="/index.html" class="hover:opacity-80 transition-opacity">
+                    ~/farrelsatria/
+                </a>
+                <p>tourism</p>
+            </div>
+                
+            <div class="flex items-center gap-2 md:gap-8 text-sm">
+                <a href="/profile/" class="text-secondary-text hover:text-hover transition-colors">profile</a>
+                <a href="/hometown/" class="text-secondary-text hover:text-hover transition-colors">hometown</a>
+                <a href="/food/" class="text-secondary-text hover:text-hover transition-colors">food</a>
+
+                <!-- <a href="index.html#hit-me-up" class="px-4 py-2 border border-border-custom rounded-lg text-secondary bg-white hover:opacity-80 hover:text-main transition-opacity ml-2">contact me</a> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+     <main class="w-full flex-1 bg-main text-main-text flex flex-col justify-center px-8 py-6 max-w-7xl mx-auto gap-20">
+
+         <!-- Projects -->
+          <section class="flex flex-col items-center justify-center pb-10">
+            <h1 class="pb-5 font-bold text-lg">places to go in Nganjuk</h1>
+
+            <!-- Card -->
+             <div class="grid grid-cols-1 md:grid-cols-3 w-full max-w-6xl items-stretch gap-10">
+                 <div class="bg-secondary h-full justify-top border border-border-custom rounded-xl p-4 flex flex-col gap-4 hover:border-secondary-text transition-colors">
+                        <div class="w-auto h-52 bg-main rounded-lg overflow-hidden flex items-center justify-center">
+                            <img src="/assets/img/sedudo.jpg" class="w-full h-full object-cover">
+                        </div>
+                    <div class="flex flex-col gap-1">
+                        <h3 class="font-medium">sedudo waterfall</h3>
+                        <p class="text-xs leading-tight text-secondary-text">an iconic mountain waterfall nestled on the slopes of mount wilis, famous for its refreshing waters and traditional siraman cultural ritual.</p>
+                    </div>
+                </div>
+
+                <div class="bg-secondary h-full justify-top border border-border-custom rounded-xl p-4 flex flex-col gap-4 hover:border-secondary-text transition-colors">
+                        <div class="w-auto h-52 bg-main rounded-lg overflow-hidden flex items-center justify-center">
+                            <img src="/assets/img/jolotundo.jpg" class="w-full h-full object-cover">
+                        </div>
+                    <div class="flex flex-col gap-1">
+                        <h3 class="font-medium">jolotundo glamping park</h3>
+                        <p class="text-xs leading-tight text-secondary-text">a serene riverside camping and glamping site set inside a lush pine forest, offering a tranquil natural getaway with cool mountain air.</p>
+                    </div>
+                </div>
+
+                <div class="bg-secondary h-full justify-top border border-border-custom rounded-xl p-4 flex flex-col gap-4 hover:border-secondary-text transition-colors">
+                        <div class="w-auto h-52 bg-main rounded-lg overflow-hidden flex items-center justify-center">
+                            <img src="/assets/img/bukit-surga.jpg" class="w-full h-full object-cover">
+                        </div>
+                    <div class="flex flex-col gap-1">
+                        <h3 class="font-medium">bukit surga</h3>
+                        <p class="text-xs leading-tight text-secondary-text">a scenic hilltop destination in sawahan featuring panoramic mountain views, lush flower gardens, and beautiful outdoor photo spots.</p>
+                    </div>
+                </div>
+             </div>
+          </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="w-full border bg-secondary border-border-custom rounded-lg p-4 flex flex-row items-center justify-center gap-4 text-xs text-main-text">
+       <p>© 2026 Farrel Satria Mukti. All rights reserved.</p>
+       <div class="flex flex-row gap-3">
+           <a href="https://instagram.com/palerrsm" class="hover:opacity-80 transition-opacity">
+               <img src="/assets/img/instagram.png" alt="" class="w-4 h-auto">
+           </a>
+           <a href="https://github.com/farrelsatria" class="hover:opacity-80 transition-opacity">
+               <img src="/assets/img/github.png" alt="" class="w-4 h-auto">
+           </a>
+           <a href="https://id.linkedin.com/in/farrel-satria-mukti" class="hover:opacity-80 transition-opacity">
+               <img src="/assets/img/linkedin.png" alt="" class="w-4 h-auto">
+           </a>
+       </div>
+    </footer>
+
+        <div id="img-modal" class="fixed inset-0 hidden bg-black/80 backdrop-blur-sm items-center justify-center p-4 transition-all">
+        <div class="relative max-w-4xl w-full flex flex-col items-center gap-3 bg-secondary border border-border-custom p-4 rounded-lg">
+            <button id="close-modal" class="absolute -top-3 -right-3 bg-white text-secondary font-bold w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer">
+                x
+            </button>
+
+            <img id="modal-img" src="" alt="" class="max-h-[80vh] w-auto max-w-full rounded-xl object-contain">
+        </div>
+    </div>
+
+    <script src="/assets/js/lightbox.js"></script>
+     
+</body>
+</html>
